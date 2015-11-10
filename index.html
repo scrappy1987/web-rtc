@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atos WebRTC Application</title>
+          <script src="lib/jquery/jquery.min.js"></script>
+          <script src="lib/bootstrap/bootstrap.js"></script>
+          <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+          <script src="lib/webrtc/webrtc.js"></script>
+          <script src="scripts/app.js"></script>
+          <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="header-image" src="img/images.png">
+                    <h2 class="page-header"  id="title">Atos WebRTC Demo Application</h2>
+                </div>
+            </div>
+
+            <h4>Instructions:</h4>
+
+            <div class ="instructions">
+                <p>1. Click button to create session.</p>
+                <p>2. Send generated URL to anyone who wishes to join the conference.</p>
+                <p>3. Your WebRTC session should now be active. Enjoy :)</p>
+            </div>
+
+            <form id="createRoom">
+                <button id="sessionInput" class="btn-primary" type="submit">Create Session</button>
+            </form>
+
+            <div class="roomInstruction"></div>
+            <div id="roomLink"></div>
+            <video id="localVideo" width="180" style="margin-top:15px;"></video>
+            <div id="remotes"></div>
+        </div>
+    </body>
+</html>
